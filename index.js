@@ -1,7 +1,7 @@
 function(){
   var jQuery = require('jquery');
   /* ===================================================
-   * bootstrap-transition.js v2.1.1
+   * bootstrap-transition.js v2.2.0
    * http://twitter.github.com/bootstrap/javascript.html#transitions
    * ===================================================
    * Copyright 2012 Twitter, Inc.
@@ -22,13 +22,13 @@ function(){
   
   !function ($) {
   
+    "use strict"; // jshint ;_;
+  
+  
+    /* CSS TRANSITION SUPPORT (http://www.modernizr.com/)
+     * ======================================================= */
+  
     $(function () {
-  
-      "use strict"; // jshint ;_;
-  
-  
-      /* CSS TRANSITION SUPPORT (http://www.modernizr.com/)
-       * ======================================================= */
   
       $.support.transition = (function () {
   
