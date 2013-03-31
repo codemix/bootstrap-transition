@@ -1,0 +1,13 @@
+{
+  "name": "bootstrap-transition",
+  "repo": "codemix/bootstrap-transition",
+  "description": "The transition plugin from twitter bootstrap",
+  "version": "2.3.1",
+  "dependencies": {
+    "component/jquery": "*"
+  },
+  "scripts": [
+    "index.js"
+  ],
+  "main": "index.js"
+}
