@@ -1,4 +1,8 @@
-bootstrap-transition
-====================
+# bootstrap-transition
+The transition plugin from twitter bootstrap
 
-Twitter Bootstrap Transition plugin packaged for component.js instead of bower
+For full documentation see http://twitter.github.com/bootstrap/javascript.html#transitions
+
+This is a component.js compatible distribution of bootstrap-transition, automatically generated
+from the latest twitter/bootstrap master every 6 hours. It is part of the <a href="http://github.com/codemix/bootstrap-component">Bootstrap Component</a>
+project.
