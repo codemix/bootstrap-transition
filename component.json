@@ -9,5 +9,6 @@
   "scripts": [
     "index.js"
   ],
+  "licence": "Apache2",
   "main": "index.js"
 }
