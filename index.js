@@ -1,7 +1,7 @@
 function(){
   var jQuery = require('jquery');
   /* ===================================================
-   * bootstrap-transition.js v2.2.2
+   * bootstrap-transition.js v2.3.0
    * http://twitter.github.com/bootstrap/javascript.html#transitions
    * ===================================================
    * Copyright 2012 Twitter, Inc.
