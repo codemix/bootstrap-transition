@@ -1,7 +1,7 @@
 function(){
   var jQuery = require('jquery');
   /* ===================================================
-   * bootstrap-transition.js v2.0.2
+   * bootstrap-transition.js v2.0.3
    * http://twitter.github.com/bootstrap/javascript.html#transitions
    * ===================================================
    * Copyright 2012 Twitter, Inc.
@@ -19,36 +19,46 @@ function(){
    * limitations under the License.
    * ========================================================== */
   
-  !function( $ ) {
+  
+  !function ($) {
   
     $(function () {
   
-      "use strict"
+      "use strict"; // jshint ;_;
   
-      /* CSS TRANSITION SUPPORT (https://gist.github.com/373874)
+  
+      /* CSS TRANSITION SUPPORT (http://www.modernizr.com/)
        * ======================================================= */
   
       $.support.transition = (function () {
-        var thisBody = document.body || document.documentElement
-          , thisStyle = thisBody.style
-          , support = thisStyle.transition !== undefined || thisStyle.WebkitTransition !== undefined || thisStyle.MozTransition !== undefined || thisStyle.MsTransition !== undefined || thisStyle.OTransition !== undefined
   
-        return support && {
-          end: (function () {
-            var transitionEnd = "TransitionEnd"
-            if ( $.browser.webkit ) {
-            	transitionEnd = "webkitTransitionEnd"
-            } else if ( $.browser.mozilla ) {
-            	transitionEnd = "transitionend"
-            } else if ( $.browser.opera ) {
-            	transitionEnd = "oTransitionEnd"
+        var transitionEnd = (function () {
+  
+          var el = document.createElement('bootstrap')
+            , transEndEventNames = {
+                 'WebkitTransition' : 'webkitTransitionEnd'
+              ,  'MozTransition'    : 'transitionend'
+              ,  'OTransition'      : 'oTransitionEnd'
+              ,  'msTransition'     : 'MSTransitionEnd'
+              ,  'transition'       : 'transitionend'
+              }
+            , name
+  
+          for (name in transEndEventNames){
+            if (el.style[name] !== undefined) {
+              return transEndEventNames[name]
             }
-            return transitionEnd
-          }())
+          }
+  
+        }())
+  
+        return transitionEnd && {
+          end: transitionEnd
         }
+  
       })()
   
     })
   
-  }( jQuery );
+  }(jQuery);
 }
