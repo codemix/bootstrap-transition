@@ -1,4 +1,4 @@
-function(){
+(function(){
   var jQuery = require('jquery');
   /* ===================================================
    * bootstrap-transition.js v2.3.1
@@ -60,4 +60,4 @@ function(){
     })
   
   }(jQuery);
-}()
+})()
