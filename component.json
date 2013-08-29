@@ -4,7 +4,7 @@
   "description": "The transition plugin from twitter bootstrap",
   "version": "2.3.1",
   "dependencies": {
-    "component/jquery": "*"
+    "components/jquery": "*"
   },
   "scripts": [
     "index.js"
