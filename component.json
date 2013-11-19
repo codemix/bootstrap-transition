@@ -3,9 +3,7 @@
   "repo": "codemix/bootstrap-transition",
   "description": "The transition plugin from twitter bootstrap",
   "version": "3.0.0",
-  "dependencies": {
-    "component/jquery": "*"
-  },
+  "dependencies": {},
   "scripts": [
     "index.js"
   ],
